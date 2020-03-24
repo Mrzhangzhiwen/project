@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script>
+    (function (window) {
+        let computed = function () {
+            let changeW = document.documentElement.clientWidth,
+                curW = 640;
+            if (changeW > 640) {
+                return document.documentElement.style.fontSize = '100px';
+            }
+            document.documentElement.style.fontSize = changeW / 640 * 100 + 'px';
+        };
+        computed();
+
+        window.addEventListener('resize', computed);
+    })(window);
+</script>
+<div class="mainBox">
+    <div class="phoneBox">
+        <div class="headBox">
+            <h2><img src="img/img.jpg" alt=""></h2>
+        </div>
+        <div class="listenBox">
+            <a href="javascript:;" class="mark"></a>
+        </div>
+        <audio src=""></audio>
+    </div>
+    <div class="imgBox">
+        <div class="imgc">
+            <img src="./img/name.jpg" alt="">
+            <img src="./img/zhang.jpg" alt="">
+        </div>
+
+    </div>
+</div>
+<script>
+    let a = document.querySelector('.listenBox>a'),
+        phoneBox = document.querySelector('.phoneBox'),
+        imgBox = document.querySelector('.imgBox');
+
+    let showFn = () => {
+        phoneBox.style.display = 'none';
+        imgBox.style.display = 'block';
+    }
+    a.addEventListener('click', showFn);
+</script>
+</body>
+</html>

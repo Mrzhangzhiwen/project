@@ -1,0 +1,70 @@
+html {
+    font-size: 100px;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background: #F4F4F4;
+}
+
+.mainBox {
+    margin: 0 auto;
+    max-width: 640px;
+    height: 100%;
+    background: #FFF;
+}
+
+
+.phoneBox {
+    background: url("../img/zf_phoneBg.jpg") no-repeat;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.phoneBox .headBox {
+    position: relative;
+}
+
+.phoneBox .headBox h2 {
+    margin-top: .5rem;
+    text-align: center;
+}
+
+.phoneBox .headBox h2 img {
+    display: inline-block;
+    width: 2.62rem;
+    height: 2.25rem;
+}
+.listenBox{
+    position: absolute;
+    margin-left: -2.6rem;
+    left: 50%;
+    width: 5.2rem;
+    height: 3.6rem;
+    background: url("../img/zf_phoneListen.png") no-repeat;
+    background-size: 100% 100%;
+    bottom: .5rem;
+}
+.mark{
+    position: absolute;
+    bottom: .5rem;
+    width: 2rem;
+    height: 2rem;
+    right: .01rem;
+}
+.imgBox{
+    display: none;
+    height: 100%;
+    overflow: auto;
+}
+.imgc{
+    height: 100%;
+}
+.imgBox img{
+    height: 100%;
+    width: 100%;
+}
+
+
